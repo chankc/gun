@@ -23,9 +23,9 @@
 		web: config.server.listen(config.port), 
 		peers: config.peers,
 		s3: {
-			key: env.AWS_ACCESS_KEY_ID, // AWS Access Key
-      			secret: env.AWS_SECRET_ACCESS_KEY, // AWS Secret Token
-      			bucket: env.AWS_S3_BUCKET // The bucket you want to save into
+			key: process.env.AWS_ACCESS_KEY_ID, // AWS Access Key
+      			secret: process.env.AWS_SECRET_ACCESS_KEY, // AWS Secret Token
+      			bucket: process.env.AWS_S3_BUCKET // The bucket you want to save into
 		}
 	});
 
